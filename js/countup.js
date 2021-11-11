@@ -8,7 +8,7 @@ let target_expected = new countUp.CountUp('target-expected', 4.7);
 
 function startcount() {
   myFunction();
-  if(isInViewport(stats)){
+  if(isInViewport(stats) || window.outerWidth < 768){
     if (!target_budget.error) {
       target_budget.start();
       target_average.start();

@@ -364,8 +364,16 @@ footer .footer-links a p {
     font-size: 3rem !important;
   }
 
+  #nav {
+    height: 65px !important;
+  }
+
   .nav-container {
     width: 100%;
+    height: 65px;
+  }
+  .nav-container.is-fixed-top {
+    height: 65px;
   }
 
   #nav-logo {
@@ -387,6 +395,11 @@ footer .footer-links a p {
   .navbar-menu {
     z-index: 20;
     margin-left: -15px;
+  }
+
+  .button.is-danger.is-hoverable {
+    background: #ce242b;
+    color: white;
   }
 
   .main-content {
