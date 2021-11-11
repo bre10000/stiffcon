@@ -1,0 +1,122 @@
+.main-banner {
+  height: calc(100vh - 75px);
+  width: 100%;
+  background-image: url("../images/home/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.our-team-section {
+  background-image: url("../images/home/our-team.jpg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position-x: -200px;
+}
+
+.siema-image {
+  width: 320px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.siema-image .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.137);
+  z-index: 0;
+}
+.siema-image.is-active {
+  transform: scale(1.2);
+  z-index: 10;
+}
+.siema-image.is-active .after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.336);
+}
+.siema-image.is-active h4 {
+  bottom: 80%;
+  left: 0;
+}
+.siema-image.is-active:hover {
+  transform: scale(1.25);
+}
+.siema-image.is-invisible {
+  transform: scale(0.2);
+  opacity: 0;
+  z-index: 0;
+  width: 0;
+  margin-right: 0;
+}
+.siema-image h4 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: 5;
+  transition: all 0.4s ease-in-out;
+}
+.siema-image:hover {
+  transform: scale(1.05);
+}
+
+p.gray {
+  line-height: 1.7 !important;
+}
+
+p.light-gray {
+  line-height: 1.5 !important;
+}
+
+.safety-section-0 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/home/safety.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+}
+.safety-section-0 .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.342);
+  z-index: 0;
+}
+.safety-section-0 .title-big {
+  position: absolute;
+  z-index: 10;
+}
+.safety-section-0 .title-big .is-size-1 {
+  font-size: 5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .pr-slider-col {
+    justify-content: start !important;
+  }
+
+  .our-team-section-line {
+    justify-content: end !important;
+  }
+
+  .our-services-section-line {
+    justify-content: center !important;
+    margin-left: -150px;
+  }
+
+  .our-team-image {
+    margin-left: -50%;
+  }
+}
